@@ -56,11 +56,34 @@
 # print(k)                        
 
 # difference()
-k = {33,22,11,44}
-v = {33,66,44,55}
-print(k.difference(v))
+# k = {33,22,11,44}
+# v = {33,66,44,55}
+# print(k.difference(v))
 
-k = {33,22,11,44}
-v = {33,66,44,55}
-k.difference_update(v)
-print(k)
+# k = {33,22,11,44}
+# v = {33,66,44,55}
+# k.difference_update(v)
+# print(k)
+
+# k = {33,22,11,44}
+# v = {33,66,44,55}
+# k.symmetric_difference(v)           # Prints the set keeping only elements found in either set, but not both
+# print(k^v)
+
+# k.symmetric_difference_update(v)
+# print(k)
+
+
+# k = {33,111,44,22}
+# v = {33,66,44,55}
+# print(k.isdisjoint(v))      # Returns True if there are no elements in common
+
+k = {33,22}
+v = {33,66,22,55}
+print(k.issubset(v))
+
+print(k.issuperset(v))
+print(v.issuperset(k))
+
+# Attributes and Methods
+print(dir(set))
