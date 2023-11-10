@@ -44,7 +44,42 @@
 
 
 # Using with keyword
-with open('biodata.txt','r') as f:
-    data = f.read()
-    print(data)
+# with open('biodata.txt','r') as f:
+#     data = f.read()
+#     print(data)
 
+# File positions seek
+# Syntax : 
+# seek(offfset,reference)
+
+# reference determines the point for the offset. Reference can take three values : 
+# 0(default) : beginning
+# 1 : current position
+# 2 : end
+
+# with open('biodata.txt','rb') as f:
+#     f.seek(6,0)
+#     data = f.read(10)
+#     print(data)
+
+# tell()
+# with open('biodata.txt','rb') as f:
+#     f.seek(6,0)
+#     p = f.tell()            # To know where the cursor is at
+#     print(p)
+#     data = f.read(10)
+#     print(data)
+
+
+
+# The OS module in Python has various methods that can be used to perform file processing operations like renaming and deleting files.
+
+# rename() method : 
+# The rename() method takes two arguments takes two arguments, the current filename and the new filename
+
+# Syntax : 
+# os.rename(old_filename,new_filename)
+
+# remove() method : 
+# Syntax : 
+# os.remove(filename)
