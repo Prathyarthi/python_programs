@@ -83,3 +83,8 @@
 # remove() method : 
 # Syntax : 
 # os.remove(filename)
+
+
+with open('ai-course.jpg','rb') as f:
+    data = f.read()
+    print(data)
