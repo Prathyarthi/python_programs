@@ -29,15 +29,22 @@
 # file.seekable()  # Returns True if the file is seekable
 
 
-f = open('biodata.txt','r')
-data = f.read()
-print(data)
-print(f.name)
-print(f.mode)
-print(f.closed)
-print(f.readable())
-print(f.writable())
-print(f.seekable())
+# f = open('biodata.txt','r')
+# data = f.read()
+# print(data)
+# print(f.name)
+# print(f.mode)
+# print(f.closed)
+# print(f.readable())
+# print(f.writable())
+# print(f.seekable())
 
-print("File read successfully!")
-f.close()
+# print("File read successfully!")
+# f.close()
+
+
+# Using with keyword
+with open('biodata.txt','r') as f:
+    data = f.read()
+    print(data)
+
